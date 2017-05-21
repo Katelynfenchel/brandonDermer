@@ -1,0 +1,163 @@
+body, html {
+	background: black;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+h1{
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font:25px "Lato", sans-serif;
+	text-align: center;	
+	color: white;
+}
+	/*.brandon{
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font:25px "Lato", sans-serif;
+	text-align: center;	
+	color: white;*/
+
+	}
+h2{
+	color: white;
+	font:16px "Lato", sans-serif;
+	text-align: left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: underline;
+
+}
+
+#contact{
+	color: white;
+	font:18px "Lato", sans-serif;
+	text-align: left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: underline;
+
+}
+
+h3, .commerical, .brandon{
+	color: white;
+	font:14px "Lato", sans-serif;
+	text-align: left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+}
+	/*.commerical{
+		color: white;
+		font:15px "Lato", sans-serif;
+		text-align: left;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+
+	}*/
+
+#legal{
+	text-decoration: underline;
+}
+
+p{
+	color: black;
+	font:10px "Lato", sans-serif;
+	text-align: left;
+
+}
+
+	.legal{
+		color: white;
+		font:12px "Lato", sans-serif;
+		text-align: left;
+		text-transform: uppercase;
+
+	}
+
+	.musicVideos, .shorts{
+		color: white;
+		font:12px "Lato", sans-serif;
+		text-align: left;
+		list-style-type: none;
+
+	}
+
+li{
+	color: white;
+	font:12px "Lato", sans-serif;
+	text-align: left;
+	list-style-type: none; 
+
+}
+
+a{
+	color: white;
+	font:12px "Lato", sans-serif;
+	text-align: left;
+
+}
+
+.aboutMe{
+	text-align: center;
+}
+
+.links1 a span.fa {
+    color: white;
+    padding: 0 5px;
+    font-size: 25px;
+}
+
+.links{
+    text-align: center;
+
+}
+
+.links a {
+    text-decoration: none;
+
+}
+
+
+#linkedin{
+    height: 20px;
+
+}
+
+#github{
+    height: 30px;
+}
+
+#email{
+    height:40px;
+}
+
+
+.links1{
+  /*  border-style: solid;
+    border-width: .5px .5px .5px .5px;
+    border-color: black;*/
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.links1 a {
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+    position: relative;
+ //    -webkit-transition: all 0.3s ease;
+	// -moz-transition: all 0.3s ease;
+	// -o-transition: all 0.3s ease;
+	// -ms-transition: all 0.3s ease;
+}
+
+.links1 a:hover {
+	// font-size: 28px;
+	top: -5px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
