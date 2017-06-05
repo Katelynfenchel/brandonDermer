@@ -1,8 +1,8 @@
-body, html {
-	background: black;
-	margin-left: 10px;
-	margin-right: 10px;
-}
+// body, html {
+// 	background: black;
+// 	margin-left: 10px;
+// 	margin-right: 10px;
+// }
 
 
 h1{
@@ -175,4 +175,68 @@ a{
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
+}
+
+
+.container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+ 
+.container li img {
+  position: absolute;
+  top: 0;
+  left: 1000px;
+  z-index: -50;
+  //   -webkit-transition: all 1s ease;
+  // -moz-transition: all 1s ease;
+  // -o-transition: all 1s ease;
+  // -ms-transition: all 1s ease;
+  transition: all 1s ease;
+
+} 
+
+li a:hover {
+	color: #000
+  background: #fff;
+}
+ 
+li a:hover + img {
+  left: 0px;
+}
+
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	color: #000;
+	background-color: #fff;
+}
+a:active {
+	text-decoration: none;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  margin: 25px auto;
+  width: 1000px;
+  // height: 562.5px;
+
+}
+
+body,td,th {
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+body {
+	background-color: #000;
 }
