@@ -95,6 +95,22 @@ p{
 		list-style-type: none;
 
 	}
+.madeBy{
+	color: #d3d3d3;
+	font:6px "Lato", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px; 
+
+
+}
+	a.kate{
+		color: #d3d3d3;
+		font:6px "Lato", sans-serif;
+		text-align: center;
+		// text-transform: uppercase; 
+
+	}
 
 li{
 	color: white;
