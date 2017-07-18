@@ -7,6 +7,10 @@
     <link rel="sylesheet" href="../css/font-awesome.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
     <script type="text/javascript">
         function MM_preloadImages() { //v3.0
             var d = document;
@@ -20,33 +24,18 @@
                         d.MM_p[j++].src = a[i];
                     }
             }
-        }
-
-        // var d = document;
-        // var test = d.getElementById("container");
-        // var topPos = d.getElementById("container").offsetTop;
-        // if (topPos > 15){
-        //   console.log(topPos, "topPos");  
-        // }
-
-        // console.log(test, "topPos");
-
-        // javascript google detect scroll height - position from top in pxels - probably (y axis?)
-
-        //dynamically change .container li img top value to match scroll height when scroll height is not 0.
-
-        //everytime scroll height cchanges, set .container li img to scroll height
+        }   
     </script>
 </head>
 
 <body>
     <h1>Brandon Dermer</h1>
-    <div class="container" id="container">
+    <div class="container" id="test">
         <nav>
             <br>
             <br>
 
-            <h3>Music Videos</h3>
+            <h3 id="music">Music Videos</h3>
             <li>
                 <a class="musicVideos" href="https://youtu.be/AUChk0lxF44">Panic At The Disco - Victorious - Director/Writer</a>
                 <img src="images/PanicAtDisco.jpg" width="1000" height="563" />
@@ -57,98 +46,98 @@
                 <img src="images/NotButter.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="musicVideos" href="https://youtu.be/6EiBJPMIn8M">Major Lazer - Scare Me - Director/Writer</a><img src="images/ScareMe.jpg" width="1000" height="563" />
+            <li><a class="musicVideos" href="https://youtu.be/6EiBJPMIn8M">Major Lazer - Scare Me - Director/Writer</a><img class="hover-image" src="images/ScareMe.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="musicVideos" href="https://youtu.be/KsMKOx6fumc">Nekrogoblikon - No One Survives - Director/Writer</a><img src="images/NekroGoblikon.jpg" width="1000" height="563" />
+            <li><a class="musicVideos" href="https://youtu.be/KsMKOx6fumc">Nekrogoblikon - No One Survives - Director/Writer</a><img class="hover-image" src="images/NekroGoblikon.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="musicVideos" href="https://youtu.be/oSPT27XyY1U">Kill The Noise - I Do Coke - Co-Writer/Director</a><img src="images/Coke_01.jpg" width="1000" height="563" />
+            <li><a class="musicVideos" href="https://youtu.be/oSPT27XyY1U">Kill The Noise - I Do Coke - Co-Writer/Director</a><img class="hover-image" src="images/Coke_01.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="musicVideos" href="https://youtu.be/nfOTIsh4X4Q">Wavves - That's On Me - Writer/Director</a><img src="images/waaves.jpg" width="1000" height="563" />
+            <li><a class="musicVideos" href="https://youtu.be/nfOTIsh4X4Q">Wavves - That's On Me - Writer/Director</a><img class="hover-image" src="images/waaves.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="musicVideos" href="https://www.youtube.com/watch?v=PuQt9N4Dsok">Jon Lajoie - Please Use This Song- Producer/Co-Director</a><img src="images/PleaseUse.jpg" width="1000" height="563" />
+            <li><a class="musicVideos" href="https://www.youtube.com/watch?v=PuQt9N4Dsok">Jon Lajoie - Please Use This Song- Producer/Co-Director</a><img class="hover-image" src="images/PleaseUse.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="musicVideos" href="https://www.youtube.com/watch?v=FrogoSmiAqU">Every Time I Die - It Remembers - Writer/Director</a><img src="images/ETID_01.jpg" width="1000" height="563" />
+            <li><a class="musicVideos" href="https://www.youtube.com/watch?v=FrogoSmiAqU">Every Time I Die - It Remembers - Writer/Director</a><img class="hover-image" src="images/ETID_01.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="musicVideos" href="https://vimeo.com/109729574">FartBarf - Homeless in Heathrow - Writer/Director</a><img src="images/Fartbarf.jpg" width="1000" height="563" />
+            <li><a class="musicVideos" href="https://vimeo.com/109729574">FartBarf - Homeless in Heathrow - Writer/Director</a><img class="hover-image" src="images/Fartbarf.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="musicVideos" href="https://vimeo.com/168096103">Tape - Synthetic - Writer/Director</a><img src="images/Tape.jpg" width="1000" height="563" />
+            <li><a class="musicVideos" href="https://vimeo.com/168096103">Tape - Synthetic - Writer/Director</a><img class="hover-image" src="images/Tape.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="musicVideos" href="https://www.youtube.com/watch?v=qG8iAtpavK4">Woflie's Just Fine - A New Beginning - Co-Director</a><img src="images/Wolfie_01.jpg" width="1000" height="563" />
+            <li><a class="musicVideos" href="https://www.youtube.com/watch?v=qG8iAtpavK4">Woflie's Just Fine - A New Beginning - Co-Director</a><img class="hover-image" src="images/Wolfie_01.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="musicVideos" href="https://youtu.be/LZ5UsXXmnb4">Woflie's Just Fine - It's a Job - Co-Director</a><img src="images/Wolfie_02.jpg" width="1000" height="563" />
+            <li><a class="musicVideos" href="https://youtu.be/LZ5UsXXmnb4">Woflie's Just Fine - It's a Job - Co-Director</a><img class="hover-image" src="images/Wolfie_02.jpg" width="1000" height="563" />
             </li>
 
             <li><a class="musicVideos" href="https://www.youtube.com/playlist?list=PLosoHV9Sc0hcCoX06RMdDZ8V9FAN_Pe2C">See More Here</a>
             </li>
 
             <h3>TV/FILM</h3>
-            <li><a class="film" href="https://youtu.be/sMc37-cffbY">What Would Diplo Do - Director/Executive Producer</a><img src="images/Diplo3.jpg" width="1000" height="563" />
+            <li><a class="film" href="https://youtu.be/sMc37-cffbY">What Would Diplo Do - Director/Executive Producer</a><img class="hover-image" src="images/Diplo3.jpg" width="1000" height="563" />
             </li>
             
-            <li><a class="film" href="https://youtu.be/QZnr3bdZPxg">Andrew Santino 'Homefield Advantage' - Director</a><img src="images/Santino.jpg" width="1000" height="563" />
+            <li><a class="film" href="https://youtu.be/QZnr3bdZPxg">Andrew Santino 'Homefield Advantage' - Director</a><img class="hover-image" src="images/Santino.jpg" width="1000" height="563" />
             </li>
 
             <h3>Shorts</h3>
-            <li><a class="shorts" href="https://youtu.be/SoAIzki2jOI">Day In The Life Of Diplo - Director/Co-Writer</a><img src="images/Diplo.jpg" width="1000" height="563" />
+            <li><a class="shorts" href="https://youtu.be/SoAIzki2jOI">Day In The Life Of Diplo - Director/Co-Writer</a><img class="hover-image" src="images/Diplo.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="shorts" href="https://youtu.be/UJsw9NHxIPY">Comedy Central Presents Glass Ceiling - Director</a><img src="images/GlassCeiling.jpg" width="1000" height="563" />
+            <li><a class="shorts" href="https://youtu.be/UJsw9NHxIPY">Comedy Central Presents Glass Ceiling - Director</a><img class="hover-image" src="images/GlassCeiling.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="shorts" href="https://youtu.be/qTQagbeCAxs">Fleshlightning - Writer/Director/Producer</a><img src="images/Fleshlightning2.jpg" width="1000" height="563" />
+            <li><a class="shorts" href="https://youtu.be/qTQagbeCAxs">Fleshlightning - Writer/Director/Producer</a><img class="hover-image" src="images/Fleshlightning2.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="shorts" href="https://youtu.be/bSR3h1wUoS8">Jon Lajoie's Kickstarter - Co-Director/Producer</a><img src="images/Kickstart.jpg" width="1000" height="563" />
+            <li><a class="shorts" href="https://youtu.be/bSR3h1wUoS8">Jon Lajoie's Kickstarter - Co-Director/Producer</a><img class="hover-image" src="images/Kickstart.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="shorts" href="https://youtu.be/UsDKku1wIZU">Commercial Actors Mingle - Co-Director/Producer</a><img src="images/CommercialActors.jpg" width="1000" height="563" />
+            <li><a class="shorts" href="https://youtu.be/UsDKku1wIZU">Commercial Actors Mingle - Co-Director/Producer</a><img class="hover-image" src="images/CommercialActors.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="shorts" href="https://youtu.be/29sv64XWcFc">Comedy Central Presents: Happy F**king Valentine's Day - Director</a><img src="images/Valentines.jpg" width="1000" height="563" />
+            <li><a class="shorts" href="https://youtu.be/29sv64XWcFc">Comedy Central Presents: Happy F**king Valentine's Day - Director</a><img class="hover-image" src="images/Valentines.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="shorts" href="https://youtu.be/s0YuFjF27bc">Comedy Central Presents Wrestling Is Real - Director</a><img src="images/Wrestling.jpg" width="1000" height="563" />
+            <li><a class="shorts" href="https://youtu.be/s0YuFjF27bc">Comedy Central Presents Wrestling Is Real - Director</a><img class="hover-image" src="images/Wrestling.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="shorts" href="https://youtu.be/UUHwMlG5_d8">Comedy Central Presents Galentines Day - Director</a><img src="images/Galentines.jpg" width="1000" height="563" />
+            <li><a class="shorts" href="https://youtu.be/UUHwMlG5_d8">Comedy Central Presents Galentines Day - Director</a><img class="hover-image" src="images/Galentines.jpg" width="1000" height="563" />
             </li>
-            <li><a class="shorts" href="https://youtu.be/SY-PYSdqG1E">Comedy Central Presents Hip Hop Courtroom - Director</a><img src="images/HipHopCourt.jpg" width="1000" height="563" />
+            <li><a class="shorts" href="https://youtu.be/SY-PYSdqG1E">Comedy Central Presents Hip Hop Courtroom - Director</a><img class="hover-image" src="images/HipHopCourt.jpg" width="1000" height="563" />
             </li>
-            <li><a class="shorts" href="https://youtu.be/KsbgdAnwhU4">Comedy Central Presents Animal House of Cards - Director/Co-Writer</a><img src="images/Animal-House.jpg" width="1000" height="563" />
+            <li><a class="shorts" href="https://youtu.be/KsbgdAnwhU4">Comedy Central Presents Animal House of Cards - Director/Co-Writer</a><img class="hover-image" src="images/Animal-House.jpg" width="1000" height="563" />
             </li>
             <li><a class="musicVideos" href=" https://www.youtube.com/playlist?list=PLosoHV9Sc0hfOXuLNnDyRzMKgfpmUCoYu">See More Here</a>
             </li>
             
             <h3 class="commerical">Commericals</h3>
             
-            <li><a class="commericals" href="https://vimeo.com/72454060">EA Games Presents: Battledrome - Director</a><img src="images/Battledrome.jpg" width="1000" height="563" />
+            <li><a class="commericals" href="https://vimeo.com/72454060">EA Games Presents: Battledrome - Director</a><img class="hover-image" src="images/Battledrome.jpg" width="1000" height="563" />
             </li>
-            <li><a class="commericals" href="https://vimeo.com/78215404">Death Wish Coffee Presents The Janitor - Writer/Director</a><img src="images/DeathWish_01.jpg" width="1000" height="563" />
+            <li><a class="commericals" href="https://vimeo.com/78215404">Death Wish Coffee Presents The Janitor - Writer/Director</a><img class="hover-image" src="images/DeathWish_01.jpg" width="1000" height="563" />
             </li>
-            <li><a class="commericals" href="https://vimeo.com/78215405">Death Wish Coffee Presents The Executive - Writer/Director</a><img src="images/DeathWish_02.jpg" width="1000" height="563" />
+            <li><a class="commericals" href="https://vimeo.com/78215405">Death Wish Coffee Presents The Executive - Writer/Director</a><img class="hover-image" src="images/DeathWish_02.jpg" width="1000" height="563" />
             </li>
-            <li><a class="commericals" href="https://youtu.be/4CPrWO79nDM">Mutual of Omaha's Wild Kingdom - Imagination - Director</a><img src="images/Omaha_01.jpg" width="1000" height="563" />
+            <li><a class="commericals" href="https://youtu.be/4CPrWO79nDM">Mutual of Omaha's Wild Kingdom - Imagination - Director</a><img class="hover-image" src="images/Omaha_01.jpg" width="1000" height="563" />
             </li>
-            <li><a class="commericals" href="https://youtu.be/gcMAerqpj_U">Mutual of Omaha's Wild Kingdom - House Party - Director</a><img src="images/Omaha_02.jpg" width="1000" height="563" />
-            </li>
-
-            <li><a class="commericals" href="https://vimeo.com/94108970">NKLA and Best Friends Animal Society - Director</a><img src="images/NKLA.jpg" width="1000" height="563" />
+            <li><a class="commericals" href="https://youtu.be/gcMAerqpj_U">Mutual of Omaha's Wild Kingdom - House Party - Director</a><img class="hover-image" src="images/Omaha_02.jpg" width="1000" height="563" />
             </li>
 
-            <li><a class="commericals" href="https://youtu.be/y4D2b8LAOdA">The Mountian Tee Party- Director</a><img src="images/MountainTee.jpg" width="1000" height="563" />
+            <li><a class="commericals" href="https://vimeo.com/94108970">NKLA and Best Friends Animal Society - Director</a><img class="hover-image" src="images/NKLA.jpg" width="1000" height="563" />
             </li>
-            <li><a class="commericals" href="https://vimeo.com/118547601">Megared TV Spot - Director</a><img src="images/MegaRed.jpg" width="1000" height="563" />
+
+            <li><a class="commericals" href="https://youtu.be/y4D2b8LAOdA">The Mountian Tee Party- Director</a><img class="hover-image" src="images/MountainTee.jpg" width="1000" height="563" />
             </li>
-            <li><a class="commericals" href="https://youtu.be/LXVMmOupXOQ">Major Lazer - Scare Me Music Video Trailer - Director</a><img src="images/ScareMe.jpg" width="1000" height="563" />
+            <li><a class="commericals" href="https://vimeo.com/118547601">Megared TV Spot - Director</a><img class="hover-image" src="images/MegaRed.jpg" width="1000" height="563" />
+            </li>
+            <li><a class="commericals" href="https://youtu.be/LXVMmOupXOQ">Major Lazer - Scare Me Music Video Trailer - Director</a><img class="hover-image" src="images/ScareMe.jpg" width="1000" height="563" />
             </li>
            
             <h3><a class="brandon" href="contact.html">Contact</a></h3>
@@ -178,5 +167,17 @@
 
     </div>
 </footer>
+<script type="text/javascript">
+$(document).ready(function() {
+        function testScroll(ev){
+            if(window.pageYOffset > 0){
+                // console.log(window.pageYOffset);
+                // change .container li img top value to match window.pageYOffset
+                $(".hover-image").css('top',window.pageYOffset);
+            }
+        }
 
+        window.onscroll=testScroll
+    });
+</script>
 </html>
