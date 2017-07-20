@@ -214,6 +214,12 @@ li a:hover {
 
 .brandon:hover {
 	color: #fff;
+	text-decoration: underline;
+}
+
+.commericals, .header:hover{
+	text-decoration: underline;
+
 }
 
 li a.commercials, .emails:hover {
