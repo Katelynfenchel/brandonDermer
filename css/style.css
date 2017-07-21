@@ -217,6 +217,10 @@ li a:hover {
 	
 }
 
+.emails:hover{
+	text-decoration: underline;
+}
+
 .musicVideos:hover{
 	text-decoration: underline;
 }
