@@ -214,17 +214,29 @@ li a:hover {
 
 .brandon:hover {
 	color: #fff;
+	
+}
+
+.musicVideos:hover{
 	text-decoration: underline;
 }
 
-.commericals, .header:hover{
+.film:hover{
 	text-decoration: underline;
 
+}
+.shorts:hover{
+	text-decoration: underline;
+}
+
+.commericals:hover{
+	text-decoration: underline;
 }
 
 li a.commercials, .emails:hover {
 	color: #fff;
 	background: #000;
+
 }
  
 li a:hover + img {
